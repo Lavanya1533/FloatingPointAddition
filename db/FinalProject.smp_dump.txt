@@ -1,0 +1,127 @@
+
+State Machine - |FinalProject|num1Key
+Name num1Key.11111001 num1Key.11111000 num1Key.11000110 num1Key.11000000 num1Key.10110000 num1Key.10100100 num1Key.10100001 num1Key.10011001 num1Key.10011000 num1Key.10010010 num1Key.10001110 num1Key.10001000 num1Key.10000110 num1Key.10000011 num1Key.10000010 num1Key.10000000 num1Key.01111111 
+num1Key.01111111 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+num1Key.10000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+num1Key.10000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+num1Key.10000011 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+num1Key.10000110 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+num1Key.10001000 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+num1Key.10001110 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+num1Key.10010010 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+num1Key.10011000 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+num1Key.10011001 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+num1Key.10100001 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+num1Key.10100100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+num1Key.10110000 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+num1Key.11000000 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+num1Key.11000110 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+num1Key.11111000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+num1Key.11111001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|segDisplay4
+Name segDisplay4.11111001 segDisplay4.11111000 segDisplay4.11000110 segDisplay4.11000000 segDisplay4.10110000 segDisplay4.10100100 segDisplay4.10100001 segDisplay4.10011001 segDisplay4.10011000 segDisplay4.10010010 segDisplay4.10001110 segDisplay4.10001000 segDisplay4.10000110 segDisplay4.10000011 segDisplay4.10000010 segDisplay4.10000000 segDisplay4.01111111 
+segDisplay4.01111111 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+segDisplay4.10000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+segDisplay4.10000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+segDisplay4.10000011 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+segDisplay4.10000110 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+segDisplay4.10001000 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+segDisplay4.10001110 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+segDisplay4.10010010 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+segDisplay4.10011000 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+segDisplay4.10011001 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+segDisplay4.10100001 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+segDisplay4.10100100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay4.10110000 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay4.11000000 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay4.11000110 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay4.11111000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay4.11111001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|segDisplay3
+Name segDisplay3.11111001 segDisplay3.11111000 segDisplay3.11000110 segDisplay3.11000000 segDisplay3.10110000 segDisplay3.10100100 segDisplay3.10100001 segDisplay3.10011001 segDisplay3.10011000 segDisplay3.10010010 segDisplay3.10001110 segDisplay3.10001000 segDisplay3.10000110 segDisplay3.10000011 segDisplay3.10000010 segDisplay3.10000000 segDisplay3.01111111 
+segDisplay3.01111111 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+segDisplay3.10000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+segDisplay3.10000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+segDisplay3.10000011 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+segDisplay3.10000110 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+segDisplay3.10001000 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+segDisplay3.10001110 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+segDisplay3.10010010 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+segDisplay3.10011000 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+segDisplay3.10011001 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+segDisplay3.10100001 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+segDisplay3.10100100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay3.10110000 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay3.11000000 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay3.11000110 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay3.11111000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay3.11111001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|segDisplay2
+Name segDisplay2.11111001 segDisplay2.11111000 segDisplay2.11000110 segDisplay2.11000000 segDisplay2.10110000 segDisplay2.10100100 segDisplay2.10100001 segDisplay2.10011001 segDisplay2.10011000 segDisplay2.10010010 segDisplay2.10001110 segDisplay2.10001000 segDisplay2.10000110 segDisplay2.10000011 segDisplay2.10000010 segDisplay2.10000000 segDisplay2.01111111 
+segDisplay2.01111111 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+segDisplay2.10000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+segDisplay2.10000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+segDisplay2.10000011 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+segDisplay2.10000110 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+segDisplay2.10001000 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+segDisplay2.10001110 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+segDisplay2.10010010 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+segDisplay2.10011000 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+segDisplay2.10011001 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+segDisplay2.10100001 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+segDisplay2.10100100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay2.10110000 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay2.11000000 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay2.11000110 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay2.11111000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay2.11111001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|segDisplay1
+Name segDisplay1.11111001 segDisplay1.11111000 segDisplay1.11000110 segDisplay1.11000000 segDisplay1.10110000 segDisplay1.10100100 segDisplay1.10100001 segDisplay1.10011001 segDisplay1.10011000 segDisplay1.10010010 segDisplay1.10001110 segDisplay1.10001000 segDisplay1.10000110 segDisplay1.10000011 segDisplay1.10000010 segDisplay1.10000000 segDisplay1.01111111 
+segDisplay1.01111111 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+segDisplay1.10000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+segDisplay1.10000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+segDisplay1.10000011 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+segDisplay1.10000110 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+segDisplay1.10001000 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+segDisplay1.10001110 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+segDisplay1.10010010 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+segDisplay1.10011000 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+segDisplay1.10011001 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+segDisplay1.10100001 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+segDisplay1.10100100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay1.10110000 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay1.11000000 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay1.11000110 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay1.11111000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay1.11111001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|segDisplay
+Name segDisplay.11111001 segDisplay.11111000 segDisplay.11000110 segDisplay.11000000 segDisplay.10110000 segDisplay.10100100 segDisplay.10100001 segDisplay.10011001 segDisplay.10011000 segDisplay.10010010 segDisplay.10001110 segDisplay.10001000 segDisplay.10000110 segDisplay.10000011 segDisplay.10000010 segDisplay.10000000 segDisplay.01111111 
+segDisplay.01111111 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+segDisplay.10000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+segDisplay.10000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+segDisplay.10000011 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+segDisplay.10000110 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+segDisplay.10001000 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+segDisplay.10001110 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+segDisplay.10010010 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+segDisplay.10011000 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+segDisplay.10011001 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+segDisplay.10100001 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+segDisplay.10100100 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay.10110000 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay.11000000 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay.11000110 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay.11111000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+segDisplay.11111001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |FinalProject|columnState
+Name columnState.11 columnState.10 columnState.01 columnState.00 
+columnState.00 0 0 0 0 
+columnState.01 0 0 1 1 
+columnState.10 0 1 0 1 
+columnState.11 1 0 0 1 
