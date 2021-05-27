@@ -1,0 +1,46 @@
+# Reading pref.tcl
+# do FinalProject_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/ambro/Documents/FinalProject {C:/Users/ambro/Documents/FinalProject/FinalProject.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:56:59 on May 02,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ambro/Documents/FinalProject" C:/Users/ambro/Documents/FinalProject/FinalProject.v 
+# -- Compiling module FinalProject
+# 
+# Top level modules:
+# 	FinalProject
+# End time: 11:56:59 on May 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/ambro/Documents/FinalProject/simulation/modelsim {C:/Users/ambro/Documents/FinalProject/simulation/modelsim/FinalProject_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:57:00 on May 02,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ambro/Documents/FinalProject/simulation/modelsim" C:/Users/ambro/Documents/FinalProject/simulation/modelsim/FinalProject_tb.v 
+# -- Compiling module FinalProject_tb
+# ** Error: (vlog-13062) C:/Users/ambro/Documents/FinalProject/simulation/modelsim/FinalProject_tb.v(6): near "reg": A verilog net type keyword cannot be followed by the reg keyword.
+# ** Error: (vlog-13062) C:/Users/ambro/Documents/FinalProject/simulation/modelsim/FinalProject_tb.v(9): near "reg": A verilog net type keyword cannot be followed by the reg keyword.
+# ** Error: (vlog-13062) C:/Users/ambro/Documents/FinalProject/simulation/modelsim/FinalProject_tb.v(12): near "reg": A verilog net type keyword cannot be followed by the reg keyword.
+# ** Error: (vlog-13062) C:/Users/ambro/Documents/FinalProject/simulation/modelsim/FinalProject_tb.v(20): near "reg": A verilog net type keyword cannot be followed by the reg keyword.
+# ** Error: (vlog-13062) C:/Users/ambro/Documents/FinalProject/simulation/modelsim/FinalProject_tb.v(22): near "reg": A verilog net type keyword cannot be followed by the reg keyword.
+# End time: 11:57:00 on May 02,2021, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./FinalProject_run_msim_rtl_verilog.do line 10
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+C:/Users/ambro/Documents/FinalProject/simulation/modelsim {C:/Users/ambro/Documents/FinalProject/simulation/mode..."
+vsim rtl_work.FinalProject
+# vsim rtl_work.FinalProject 
+# Start time: 11:57:08 on May 02,2021
+# Loading rtl_work.FinalProject
+# End time: 12:00:48 on May 02,2021, Elapsed time: 0:03:40
+# Errors: 0, Warnings: 0

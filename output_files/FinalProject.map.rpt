@@ -1,0 +1,643 @@
+Analysis & Synthesis report for FinalProject
+Thu May 27 00:26:10 2021
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |FinalProject|num1Key
+  9. State Machine - |FinalProject|segDisplay4
+ 10. State Machine - |FinalProject|segDisplay3
+ 11. State Machine - |FinalProject|segDisplay2
+ 12. State Machine - |FinalProject|segDisplay1
+ 13. State Machine - |FinalProject|segDisplay
+ 14. State Machine - |FinalProject|columnState
+ 15. Registers Removed During Synthesis
+ 16. Removed Registers Triggering Further Register Optimizations
+ 17. General Register Statistics
+ 18. Inverted Register Statistics
+ 19. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 20. Post-Synthesis Netlist Statistics for Top Partition
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
+ 23. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu May 27 00:26:10 2021       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; FinalProject                                ;
+; Top-level Entity Name              ; FinalProject                                ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 1,590                                       ;
+;     Total combinational functions  ; 1,528                                       ;
+;     Dedicated logic registers      ; 316                                         ;
+; Total registers                    ; 316                                         ;
+; Total pins                         ; 48                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                            ; FinalProject       ; FinalProject       ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                       ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                         ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
+; FinalProject.v                   ; yes             ; User Verilog HDL File  ; C:/Users/ambro/Documents/FinalProject/FinalProject.v ;         ;
+; fpa_adder.v                      ; yes             ; User Verilog HDL File  ; C:/Users/ambro/Documents/FinalProject/fpa_adder.v    ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+; Estimated Total logic elements              ; 1,590         ;
+;                                             ;               ;
+; Total combinational functions               ; 1528          ;
+; Logic element usage by number of LUT inputs ;               ;
+;     -- 4 input functions                    ; 1108          ;
+;     -- 3 input functions                    ; 241           ;
+;     -- <=2 input functions                  ; 179           ;
+;                                             ;               ;
+; Logic elements by mode                      ;               ;
+;     -- normal mode                          ; 1431          ;
+;     -- arithmetic mode                      ; 97            ;
+;                                             ;               ;
+; Total registers                             ; 316           ;
+;     -- Dedicated logic registers            ; 316           ;
+;     -- I/O registers                        ; 0             ;
+;                                             ;               ;
+; I/O pins                                    ; 48            ;
+;                                             ;               ;
+; Embedded Multiplier 9-bit elements          ; 0             ;
+;                                             ;               ;
+; Maximum fan-out node                        ; displayResult ;
+; Maximum fan-out                             ; 248           ;
+; Total fan-out                               ; 6501          ;
+; Average fan-out                             ; 3.35          ;
++---------------------------------------------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                            ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------+--------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name            ; Entity Name  ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------+--------------+--------------+
+; |FinalProject              ; 1528 (327)          ; 316 (227)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 48   ; 0            ; 0          ; |FinalProject                  ; FinalProject ; work         ;
+;    |fpa_adder:adder1|      ; 1201 (1201)         ; 89 (89)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |FinalProject|fpa_adder:adder1 ; fpa_adder    ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------+--------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |FinalProject|num1Key                                                                                                                                                                                                                                                                                                               ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+; Name             ; num1Key.11111001 ; num1Key.11111000 ; num1Key.11000110 ; num1Key.11000000 ; num1Key.10110000 ; num1Key.10100100 ; num1Key.10100001 ; num1Key.10011001 ; num1Key.10011000 ; num1Key.10010010 ; num1Key.10001110 ; num1Key.10001000 ; num1Key.10000110 ; num1Key.10000011 ; num1Key.10000010 ; num1Key.10000000 ; num1Key.01111111 ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+; num1Key.01111111 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ;
+; num1Key.10000000 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ;
+; num1Key.10000010 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 1                ;
+; num1Key.10000011 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 1                ;
+; num1Key.10000110 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 1                ;
+; num1Key.10001000 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; num1Key.10001110 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; num1Key.10010010 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; num1Key.10011000 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; num1Key.10011001 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; num1Key.10100001 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; num1Key.10100100 ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; num1Key.10110000 ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; num1Key.11000000 ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; num1Key.11000110 ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; num1Key.11111000 ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; num1Key.11111001 ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
++------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |FinalProject|segDisplay4                                                                                                                                                                                                                                                                                                                                                                                   ;
++----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+; Name                 ; segDisplay4.11111001 ; segDisplay4.11111000 ; segDisplay4.11000110 ; segDisplay4.11000000 ; segDisplay4.10110000 ; segDisplay4.10100100 ; segDisplay4.10100001 ; segDisplay4.10011001 ; segDisplay4.10011000 ; segDisplay4.10010010 ; segDisplay4.10001110 ; segDisplay4.10001000 ; segDisplay4.10000110 ; segDisplay4.10000011 ; segDisplay4.10000010 ; segDisplay4.10000000 ; segDisplay4.01111111 ;
++----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+; segDisplay4.01111111 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ;
+; segDisplay4.10000000 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 1                    ;
+; segDisplay4.10000010 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 1                    ;
+; segDisplay4.10000011 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay4.10000110 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay4.10001000 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay4.10001110 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay4.10010010 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay4.10011000 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay4.10011001 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay4.10100001 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay4.10100100 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay4.10110000 ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay4.11000000 ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay4.11000110 ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay4.11111000 ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay4.11111001 ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
++----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |FinalProject|segDisplay3                                                                                                                                                                                                                                                                                                                                                                                   ;
++----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+; Name                 ; segDisplay3.11111001 ; segDisplay3.11111000 ; segDisplay3.11000110 ; segDisplay3.11000000 ; segDisplay3.10110000 ; segDisplay3.10100100 ; segDisplay3.10100001 ; segDisplay3.10011001 ; segDisplay3.10011000 ; segDisplay3.10010010 ; segDisplay3.10001110 ; segDisplay3.10001000 ; segDisplay3.10000110 ; segDisplay3.10000011 ; segDisplay3.10000010 ; segDisplay3.10000000 ; segDisplay3.01111111 ;
++----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+; segDisplay3.01111111 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ;
+; segDisplay3.10000000 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 1                    ;
+; segDisplay3.10000010 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 1                    ;
+; segDisplay3.10000011 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay3.10000110 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay3.10001000 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay3.10001110 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay3.10010010 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay3.10011000 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay3.10011001 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay3.10100001 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay3.10100100 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay3.10110000 ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay3.11000000 ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay3.11000110 ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay3.11111000 ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay3.11111001 ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
++----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |FinalProject|segDisplay2                                                                                                                                                                                                                                                                                                                                                                                   ;
++----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+; Name                 ; segDisplay2.11111001 ; segDisplay2.11111000 ; segDisplay2.11000110 ; segDisplay2.11000000 ; segDisplay2.10110000 ; segDisplay2.10100100 ; segDisplay2.10100001 ; segDisplay2.10011001 ; segDisplay2.10011000 ; segDisplay2.10010010 ; segDisplay2.10001110 ; segDisplay2.10001000 ; segDisplay2.10000110 ; segDisplay2.10000011 ; segDisplay2.10000010 ; segDisplay2.10000000 ; segDisplay2.01111111 ;
++----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+; segDisplay2.01111111 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ;
+; segDisplay2.10000000 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 1                    ;
+; segDisplay2.10000010 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 1                    ;
+; segDisplay2.10000011 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay2.10000110 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay2.10001000 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay2.10001110 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay2.10010010 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay2.10011000 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay2.10011001 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay2.10100001 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay2.10100100 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay2.10110000 ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay2.11000000 ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay2.11000110 ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay2.11111000 ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay2.11111001 ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
++----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |FinalProject|segDisplay1                                                                                                                                                                                                                                                                                                                                                                                   ;
++----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+; Name                 ; segDisplay1.11111001 ; segDisplay1.11111000 ; segDisplay1.11000110 ; segDisplay1.11000000 ; segDisplay1.10110000 ; segDisplay1.10100100 ; segDisplay1.10100001 ; segDisplay1.10011001 ; segDisplay1.10011000 ; segDisplay1.10010010 ; segDisplay1.10001110 ; segDisplay1.10001000 ; segDisplay1.10000110 ; segDisplay1.10000011 ; segDisplay1.10000010 ; segDisplay1.10000000 ; segDisplay1.01111111 ;
++----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+; segDisplay1.01111111 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ;
+; segDisplay1.10000000 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 1                    ;
+; segDisplay1.10000010 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 1                    ;
+; segDisplay1.10000011 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay1.10000110 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay1.10001000 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay1.10001110 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay1.10010010 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay1.10011000 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay1.10011001 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay1.10100001 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay1.10100100 ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay1.10110000 ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay1.11000000 ; 0                    ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay1.11000110 ; 0                    ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay1.11111000 ; 0                    ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
+; segDisplay1.11111001 ; 1                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 0                    ; 1                    ;
++----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+----------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |FinalProject|segDisplay                                                                                                                                                                                                                                                                                                                                                                  ;
++---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+
+; Name                ; segDisplay.11111001 ; segDisplay.11111000 ; segDisplay.11000110 ; segDisplay.11000000 ; segDisplay.10110000 ; segDisplay.10100100 ; segDisplay.10100001 ; segDisplay.10011001 ; segDisplay.10011000 ; segDisplay.10010010 ; segDisplay.10001110 ; segDisplay.10001000 ; segDisplay.10000110 ; segDisplay.10000011 ; segDisplay.10000010 ; segDisplay.10000000 ; segDisplay.01111111 ;
++---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+
+; segDisplay.01111111 ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ;
+; segDisplay.10000000 ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ; 1                   ;
+; segDisplay.10000010 ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ; 0                   ; 1                   ;
+; segDisplay.10000011 ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ; 0                   ; 0                   ; 1                   ;
+; segDisplay.10000110 ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ; 0                   ; 0                   ; 0                   ; 1                   ;
+; segDisplay.10001000 ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ;
+; segDisplay.10001110 ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ;
+; segDisplay.10010010 ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ;
+; segDisplay.10011000 ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ;
+; segDisplay.10011001 ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ;
+; segDisplay.10100001 ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ;
+; segDisplay.10100100 ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ;
+; segDisplay.10110000 ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ;
+; segDisplay.11000000 ; 0                   ; 0                   ; 0                   ; 1                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ;
+; segDisplay.11000110 ; 0                   ; 0                   ; 1                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ;
+; segDisplay.11111000 ; 0                   ; 1                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ;
+; segDisplay.11111001 ; 1                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 0                   ; 1                   ;
++---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+---------------------+
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------------------------+
+; State Machine - |FinalProject|columnState                                          ;
++----------------+----------------+----------------+----------------+----------------+
+; Name           ; columnState.11 ; columnState.10 ; columnState.01 ; columnState.00 ;
++----------------+----------------+----------------+----------------+----------------+
+; columnState.00 ; 0              ; 0              ; 0              ; 0              ;
+; columnState.01 ; 0              ; 0              ; 1              ; 1              ;
+; columnState.10 ; 0              ; 1              ; 0              ; 1              ;
+; columnState.11 ; 1              ; 0              ; 0              ; 1              ;
++----------------+----------------+----------------+----------------+----------------+
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; fpa_adder:adder1|ovf                   ; Stuck at GND due to stuck port data_in ;
+; led1~reg0                              ; Stuck at GND due to stuck port data_in ;
+; num1Key~19                             ; Lost fanout                            ;
+; num1Key~20                             ; Lost fanout                            ;
+; num1Key~21                             ; Lost fanout                            ;
+; num1Key~22                             ; Lost fanout                            ;
+; num1Key~23                             ; Lost fanout                            ;
+; num1Key~24                             ; Lost fanout                            ;
+; num1Key~25                             ; Lost fanout                            ;
+; segDisplay4~19                         ; Lost fanout                            ;
+; segDisplay4~20                         ; Lost fanout                            ;
+; segDisplay4~21                         ; Lost fanout                            ;
+; segDisplay4~22                         ; Lost fanout                            ;
+; segDisplay4~23                         ; Lost fanout                            ;
+; segDisplay4~24                         ; Lost fanout                            ;
+; segDisplay4~25                         ; Lost fanout                            ;
+; segDisplay3~19                         ; Lost fanout                            ;
+; segDisplay3~20                         ; Lost fanout                            ;
+; segDisplay3~21                         ; Lost fanout                            ;
+; segDisplay3~22                         ; Lost fanout                            ;
+; segDisplay3~23                         ; Lost fanout                            ;
+; segDisplay3~24                         ; Lost fanout                            ;
+; segDisplay3~25                         ; Lost fanout                            ;
+; segDisplay2~19                         ; Lost fanout                            ;
+; segDisplay2~20                         ; Lost fanout                            ;
+; segDisplay2~21                         ; Lost fanout                            ;
+; segDisplay2~22                         ; Lost fanout                            ;
+; segDisplay2~23                         ; Lost fanout                            ;
+; segDisplay2~24                         ; Lost fanout                            ;
+; segDisplay2~25                         ; Lost fanout                            ;
+; segDisplay1~19                         ; Lost fanout                            ;
+; segDisplay1~20                         ; Lost fanout                            ;
+; segDisplay1~21                         ; Lost fanout                            ;
+; segDisplay1~22                         ; Lost fanout                            ;
+; segDisplay1~23                         ; Lost fanout                            ;
+; segDisplay1~24                         ; Lost fanout                            ;
+; segDisplay1~25                         ; Lost fanout                            ;
+; segDisplay~19                          ; Lost fanout                            ;
+; segDisplay~20                          ; Lost fanout                            ;
+; segDisplay~21                          ; Lost fanout                            ;
+; segDisplay~22                          ; Lost fanout                            ;
+; segDisplay~23                          ; Lost fanout                            ;
+; segDisplay~24                          ; Lost fanout                            ;
+; segDisplay~25                          ; Lost fanout                            ;
+; columnState~6                          ; Lost fanout                            ;
+; columnState~7                          ; Lost fanout                            ;
+; num1Key.10000000                       ; Lost fanout                            ;
+; num1Key.10000010                       ; Lost fanout                            ;
+; num1Key.10000011                       ; Lost fanout                            ;
+; num1Key.10000110                       ; Lost fanout                            ;
+; num1Key.10001000                       ; Lost fanout                            ;
+; num1Key.10001110                       ; Lost fanout                            ;
+; num1Key.10010010                       ; Lost fanout                            ;
+; num1Key.10011000                       ; Lost fanout                            ;
+; num1Key.10011001                       ; Lost fanout                            ;
+; num1Key.10100001                       ; Lost fanout                            ;
+; num1Key.10100100                       ; Lost fanout                            ;
+; num1Key.10110000                       ; Lost fanout                            ;
+; num1Key.11000000                       ; Lost fanout                            ;
+; num1Key.11000110                       ; Lost fanout                            ;
+; num1Key.11111000                       ; Lost fanout                            ;
+; num1Key.11111001                       ; Lost fanout                            ;
+; segDisplay4.10000000                   ; Lost fanout                            ;
+; segDisplay3.10000000                   ; Lost fanout                            ;
+; segDisplay2.10000000                   ; Lost fanout                            ;
+; segDisplay1.10000000                   ; Lost fanout                            ;
+; segDisplay.10000000                    ; Lost fanout                            ;
+; Total Number of Removed Registers = 67 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                             ;
++----------------------+---------------------------+------------------------------------------------------+
+; Register name        ; Reason for Removal        ; Registers Removed due to This Register               ;
++----------------------+---------------------------+------------------------------------------------------+
+; num1Key~19           ; Lost Fanouts              ; num1Key.10011001, num1Key.10100001, num1Key.11111001 ;
+; num1Key~20           ; Lost Fanouts              ; num1Key.10001110, num1Key.10010010, num1Key.11000110 ;
+; fpa_adder:adder1|ovf ; Stuck at GND              ; led1~reg0                                            ;
+;                      ; due to stuck port data_in ;                                                      ;
+; num1Key~21           ; Lost Fanouts              ; num1Key.10100100                                     ;
+; num1Key~22           ; Lost Fanouts              ; num1Key.11111000                                     ;
+; num1Key~23           ; Lost Fanouts              ; num1Key.10110000                                     ;
++----------------------+---------------------------+------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 316   ;
+; Number of registers using Synchronous Clear  ; 54    ;
+; Number of registers using Synchronous Load   ; 39    ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 175   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; d1~reg0                                ; 2       ;
+; num1Flag                               ; 4       ;
+; Total number of inverted registers = 2 ;         ;
++----------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |FinalProject|pbPress[1]                 ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |FinalProject|num1[2]                    ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |FinalProject|num2[0]                    ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |FinalProject|hex2bin1[0]                ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |FinalProject|fpa_adder:adder1|FPSUM[11] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |FinalProject|fpa_adder:adder1|M1[1]     ;
+; 6:1                ; 12 bits   ; 48 LEs        ; 12 LEs               ; 36 LEs                 ; Yes        ; |FinalProject|hex2bin2[2]                ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |FinalProject|seg1[7]~reg0               ;
+; 5:1                ; 28 bits   ; 84 LEs        ; 56 LEs               ; 28 LEs                 ; Yes        ; |FinalProject|seg2[1]~reg0               ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |FinalProject|d4~reg0                    ;
+; 256:1              ; 4 bits    ; 680 LEs       ; 40 LEs               ; 640 LEs                ; Yes        ; |FinalProject|hex2bin[1]                 ;
+; 401:1              ; 2 bits    ; 534 LEs       ; 4 LEs                ; 530 LEs                ; Yes        ; |FinalProject|fpa_adder:adder1|M2[0]     ;
+; 3:1                ; 17 bits   ; 34 LEs        ; 34 LEs               ; 0 LEs                  ; No         ; |FinalProject|segDisplay1                ;
+; 5:1                ; 68 bits   ; 204 LEs       ; 136 LEs              ; 68 LEs                 ; No         ; |FinalProject|num1Key                    ;
+; 18:1               ; 16 bits   ; 192 LEs       ; 192 LEs              ; 0 LEs                  ; No         ; |FinalProject|Selector11                 ;
+; 201:1              ; 2 bits    ; 268 LEs       ; 268 LEs              ; 0 LEs                  ; No         ; |FinalProject|fpa_adder:adder1|Exp       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 48                          ;
+; cycloneiii_ff         ; 316                         ;
+;     ENA               ; 95                          ;
+;     ENA SCLR          ; 51                          ;
+;     ENA SLD           ; 29                          ;
+;     SCLR              ; 3                           ;
+;     SLD               ; 10                          ;
+;     plain             ; 128                         ;
+; cycloneiii_lcell_comb ; 1530                        ;
+;     arith             ; 97                          ;
+;         2 data inputs ; 53                          ;
+;         3 data inputs ; 44                          ;
+;     normal            ; 1433                        ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 12                          ;
+;         2 data inputs ; 115                         ;
+;         3 data inputs ; 197                         ;
+;         4 data inputs ; 1108                        ;
+;                       ;                             ;
+; Max LUT depth         ; 81.70                       ;
+; Average LUT depth     ; 43.91                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:21     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Thu May 27 00:25:22 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FinalProject -c FinalProject
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file finalproject.v
+    Info (12023): Found entity 1: FinalProject File: C:/Users/ambro/Documents/FinalProject/FinalProject.v Line: 11
+Info (12021): Found 1 design units, including 1 entities, in source file fpa_adder.v
+    Info (12023): Found entity 1: fpa_adder File: C:/Users/ambro/Documents/FinalProject/fpa_adder.v Line: 5
+Info (12127): Elaborating entity "FinalProject" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at FinalProject.v(66): truncated value with size 32 to match size of target (9) File: C:/Users/ambro/Documents/FinalProject/FinalProject.v Line: 66
+Warning (10230): Verilog HDL assignment warning at FinalProject.v(67): truncated value with size 32 to match size of target (20) File: C:/Users/ambro/Documents/FinalProject/FinalProject.v Line: 67
+Warning (10230): Verilog HDL assignment warning at FinalProject.v(307): truncated value with size 32 to match size of target (3) File: C:/Users/ambro/Documents/FinalProject/FinalProject.v Line: 307
+Info (12128): Elaborating entity "fpa_adder" for hierarchy "fpa_adder:adder1" File: C:/Users/ambro/Documents/FinalProject/FinalProject.v Line: 52
+Warning (10036): Verilog HDL or VHDL warning at fpa_adder.v(10): object "ovf1" assigned a value but never read File: C:/Users/ambro/Documents/FinalProject/fpa_adder.v Line: 10
+Warning (10036): Verilog HDL or VHDL warning at fpa_adder.v(11): object "M1_St1" assigned a value but never read File: C:/Users/ambro/Documents/FinalProject/fpa_adder.v Line: 11
+Warning (10036): Verilog HDL or VHDL warning at fpa_adder.v(11): object "M2_St1" assigned a value but never read File: C:/Users/ambro/Documents/FinalProject/fpa_adder.v Line: 11
+Warning (10036): Verilog HDL or VHDL warning at fpa_adder.v(11): object "M1_St2" assigned a value but never read File: C:/Users/ambro/Documents/FinalProject/fpa_adder.v Line: 11
+Warning (10036): Verilog HDL or VHDL warning at fpa_adder.v(11): object "M2_St2" assigned a value but never read File: C:/Users/ambro/Documents/FinalProject/fpa_adder.v Line: 11
+Warning (10036): Verilog HDL or VHDL warning at fpa_adder.v(12): object "E2_St0" assigned a value but never read File: C:/Users/ambro/Documents/FinalProject/fpa_adder.v Line: 12
+Warning (10036): Verilog HDL or VHDL warning at fpa_adder.v(12): object "E_Final1" assigned a value but never read File: C:/Users/ambro/Documents/FinalProject/fpa_adder.v Line: 12
+Warning (10036): Verilog HDL or VHDL warning at fpa_adder.v(12): object "E_Final2" assigned a value but never read File: C:/Users/ambro/Documents/FinalProject/fpa_adder.v Line: 12
+Warning (10036): Verilog HDL or VHDL warning at fpa_adder.v(13): object "S2_St2" assigned a value but never read File: C:/Users/ambro/Documents/FinalProject/fpa_adder.v Line: 13
+Warning (10036): Verilog HDL or VHDL warning at fpa_adder.v(14): object "Sum" assigned a value but never read File: C:/Users/ambro/Documents/FinalProject/fpa_adder.v Line: 14
+Warning (10230): Verilog HDL assignment warning at fpa_adder.v(64): truncated value with size 32 to match size of target (5) File: C:/Users/ambro/Documents/FinalProject/fpa_adder.v Line: 64
+Warning (10230): Verilog HDL assignment warning at fpa_adder.v(69): truncated value with size 32 to match size of target (5) File: C:/Users/ambro/Documents/FinalProject/fpa_adder.v Line: 69
+Warning (10230): Verilog HDL assignment warning at fpa_adder.v(87): truncated value with size 32 to match size of target (15) File: C:/Users/ambro/Documents/FinalProject/fpa_adder.v Line: 87
+Warning (10230): Verilog HDL assignment warning at fpa_adder.v(88): truncated value with size 32 to match size of target (15) File: C:/Users/ambro/Documents/FinalProject/fpa_adder.v Line: 88
+Warning (10230): Verilog HDL assignment warning at fpa_adder.v(91): truncated value with size 32 to match size of target (15) File: C:/Users/ambro/Documents/FinalProject/fpa_adder.v Line: 91
+Warning (10230): Verilog HDL assignment warning at fpa_adder.v(97): truncated value with size 32 to match size of target (5) File: C:/Users/ambro/Documents/FinalProject/fpa_adder.v Line: 97
+Warning (10230): Verilog HDL assignment warning at fpa_adder.v(101): truncated value with size 14 to match size of target (13) File: C:/Users/ambro/Documents/FinalProject/fpa_adder.v Line: 101
+Warning (10230): Verilog HDL assignment warning at fpa_adder.v(102): truncated value with size 32 to match size of target (5) File: C:/Users/ambro/Documents/FinalProject/fpa_adder.v Line: 102
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "led1" is stuck at GND File: C:/Users/ambro/Documents/FinalProject/FinalProject.v Line: 15
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 65 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/ambro/Documents/FinalProject/output_files/FinalProject.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 1657 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 42 output pins
+    Info (21061): Implemented 1609 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 24 warnings
+    Info: Peak virtual memory: 4789 megabytes
+    Info: Processing ended: Thu May 27 00:26:10 2021
+    Info: Elapsed time: 00:00:48
+    Info: Total CPU time (on all processors): 00:01:02
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/ambro/Documents/FinalProject/output_files/FinalProject.map.smsg.
+
+

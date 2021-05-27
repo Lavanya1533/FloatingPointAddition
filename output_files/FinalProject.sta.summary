@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'displayResult'
+Slack : -45.361
+TNS   : -1802.555
+
+Type  : Slow 1200mV 85C Model Setup 'clock'
+Slack : -3.855
+TNS   : -50.579
+
+Type  : Slow 1200mV 85C Model Setup 'flag'
+Slack : -1.622
+TNS   : -31.291
+
+Type  : Slow 1200mV 85C Model Setup 'column'
+Slack : -0.314
+TNS   : -1.627
+
+Type  : Slow 1200mV 85C Model Hold 'column'
+Slack : 0.340
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'displayResult'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'flag'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clock'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -46.493
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'displayResult'
+Slack : -1.403
+TNS   : -346.541
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'flag'
+Slack : -1.403
+TNS   : -28.060
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'column'
+Slack : -1.403
+TNS   : -25.254
+
+Type  : Slow 1200mV 0C Model Setup 'displayResult'
+Slack : -41.787
+TNS   : -1643.558
+
+Type  : Slow 1200mV 0C Model Setup 'clock'
+Slack : -3.509
+TNS   : -43.271
+
+Type  : Slow 1200mV 0C Model Setup 'flag'
+Slack : -1.416
+TNS   : -27.241
+
+Type  : Slow 1200mV 0C Model Setup 'column'
+Slack : -0.217
+TNS   : -0.999
+
+Type  : Slow 1200mV 0C Model Hold 'column'
+Slack : 0.306
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'displayResult'
+Slack : 0.306
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'flag'
+Slack : 0.306
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clock'
+Slack : 0.328
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -46.493
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'displayResult'
+Slack : -1.403
+TNS   : -346.541
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'flag'
+Slack : -1.403
+TNS   : -28.060
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'column'
+Slack : -1.403
+TNS   : -25.254
+
+Type  : Fast 1200mV 0C Model Setup 'displayResult'
+Slack : -18.247
+TNS   : -654.079
+
+Type  : Fast 1200mV 0C Model Setup 'clock'
+Slack : -1.135
+TNS   : -4.896
+
+Type  : Fast 1200mV 0C Model Setup 'flag'
+Slack : -0.141
+TNS   : -1.362
+
+Type  : Fast 1200mV 0C Model Setup 'column'
+Slack : 0.397
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'column'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'displayResult'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'flag'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock'
+Slack : 0.156
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -39.134
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'displayResult'
+Slack : -1.000
+TNS   : -247.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'flag'
+Slack : -1.000
+TNS   : -20.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'column'
+Slack : -1.000
+TNS   : -18.000
+
+------------------------------------------------------------
